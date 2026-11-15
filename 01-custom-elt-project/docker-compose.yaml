@@ -1,0 +1,58 @@
+services:
+  source_postgres:
+    image: postgres:18.1
+    ports:
+      - "5433:5432"
+    networks:
+      - elt_network
+    environment:
+      POSTGRES_DB: ${SOURCE_DB_NAME}
+      POSTGRES_USER: ${SOURCE_DB_USER}
+      POSTGRES_PASSWORD: ${SOURCE_DB_PASSWORD}
+    volumes:
+      - ./source_db_init/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${SOURCE_DB_USER} -d ${SOURCE_DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  destination_postgres:
+    image: postgres:18.1
+    ports:
+      - "5434:5432"
+    networks:
+      - elt_network
+    environment:
+      POSTGRES_DB: ${DEST_DB_NAME}
+      POSTGRES_USER: ${DEST_DB_USER}
+      POSTGRES_PASSWORD: ${DEST_DB_PASSWORD}
+    volumes:
+      - destination_db_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DEST_DB_USER} -d ${DEST_DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  elt_script:
+    build:
+      context: ./elt_script
+      dockerfile: Dockerfile
+    command: ["python", "elt_script.py"]
+    networks:
+      - elt_network
+    env_file:
+      - .env
+    depends_on:
+      source_postgres:
+        condition: service_healthy
+      destination_postgres:
+        condition: service_healthy
+
+networks:
+  elt_network:
+    driver: bridge
+
+volumes:
+  destination_db_data:
