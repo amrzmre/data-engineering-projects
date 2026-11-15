@@ -1,28 +1,64 @@
-# Lessons
+# SQL Data Engineering Projects
 
-Practice scripts from each lesson of the course, kept in order. Each folder holds the SQL I wrote while working through that lesson.
+A collection of SQL projects I built to practice and reinforce my data engineering skills: querying, dimensional modelling, ETL pipelines, and data mart design.
 
-| Lesson | Script | Topic |
-|--------|--------|-------|
-| 1.09 | [`1.9_VScode_Intro.sql`](./1.09/1.9_VScode_Intro.sql) | VS Code setup and intro |
-| 1.10 | [`1.10_Data_Modelling.sql`](./1.10/1.10_Data_Modelling.sql) | Data modelling |
-| 1.11 | [`1.11_JOINs.sql`](./1.11/1.11_JOINs.sql) | JOINs |
-| 1.12 | [`1.12_Order_of_Execution.sql`](./1.12/1.12_Order_of_Execution.sql) | SQL order of execution |
-| 1.13 | [`1.13_Project_Intro.sql`](./1.13/1.13_Project_Intro.sql) | Project 1 intro |
-| 1.20 | [`1.20_Data_types.sql`](./1.20/1.20_Data_types.sql) | Data types |
-| 1.21 | [`1.21_DDL_DML_Pt1.sql`](./1.21/1.21_DDL_DML_Pt1.sql) | DDL & DML, part 1 |
-| 1.22 | [`1.22_DDL_DML_Pt2.sql`](./1.22/1.22_DDL_DML_Pt2.sql) | DDL & DML, part 2 |
-| 1.23 | [`1.23_Subquery_CTE.sql`](./1.23/1.23_Subquery_CTE.sql) | Subqueries & CTEs |
-| 1.24 | [`priority_roles.sql`](./1.24/priority_roles.sql), [`priority_jobs_snapshot.sql`](./1.24/priority_jobs_snapshot.sql) | Priority roles & jobs snapshot |
-| 1.25 | [`1.25_Case_Expressions.sql`](./1.25/1.25_Case_Expressions.sql) | `CASE` expressions |
-| 1.26 | [`1.26_Date_Functions.sql`](./1.26/1.26_Date_Functions.sql) | Date functions |
-| 1.27 | [`1.27_Set_Operators.sql`](./1.27/1.27_Set_Operators.sql) | Set operators |
-| 1.28 | [`1.28_Text_NULL_Functions.sql`](./1.28/1.28_Text_NULL_Functions.sql) | Text & NULL functions |
-| 1.29 | [`1.29_Window_Functions.sql`](./1.29/1.29_Window_Functions.sql) | Window functions |
-| 1.30 | [`1.30_Nested_Functions.sql`](./1.30/1.30_Nested_Functions.sql) | Nested functions |
-| 1.31 | [`1.31_Project_2.sql`](./1.31/1.31_Project_2.sql) | Project 2 work |
-| 1.32 | [`README.md`](./1.32/README.md) | Wrap-up notes |
+> Click a project name below to see the tools and techniques I used to build it.
 
-<!-- TODO: edit topic names if they differ from the course; 1.14-1.19 are not in the repo -->
+## Projects
 
-[← Back to SQL projects](../README.md)
+### [1. EDA](./1_EDA/) - Exploratory Data Analysis
+
+![Project 1 Overview](./Images/1_1_Project1_EDA.png)
+
+SQL-driven analysis of the data engineer job market, using multi-table joins, aggregations, and calculated metrics to answer which skills are most in demand, best paid, and most worth learning.
+
+**Skills:** Multi-table joins, aggregations, filtering, top-N analysis, calculated metrics
+
+### [2. DW & Mart Build](./2_DW_Mart_Build/) - Data Pipeline: Data Warehouse & Marts
+
+![Data Pipeline Architecture](./Images/1_2_Project2_Data_Pipeline.png)
+
+End-to-end ETL pipeline that transforms raw CSV files into a star schema data warehouse and builds analytical data marts.
+
+**Skills:** Dimensional modelling, ETL pipeline development, data mart architecture, incremental updates (`MERGE`), production practices
+
+## Lessons
+
+Practice scripts from each lesson of the course, covering JOINs, DDL/DML, CTEs, window functions, and more. See the [Lessons index](./Lessons/).
+
+## Repository Structure
+
+```text
+02-sql-data-engineering-projects/
+├── 1_EDA/                  # Project 1: job market analysis queries
+├── 2_DW_Mart_Build/        # Project 2: warehouse + marts pipeline
+├── Images/                 # Diagrams used in the READMEs
+├── Lessons/                # Lesson-by-lesson practice scripts (1.09 - 1.32)
+├── .gitignore
+└── README.md
+```
+
+## Tech Stack
+
+- **SQL** (DDL, DML, analytical functions, `MERGE`)
+- **DuckDB** as the analytical query engine
+- **Google Cloud Storage** as the source of the raw CSV files
+- **VS Code** + DuckDB CLI for development
+- **Git / GitHub** for version control
+
+## Getting Started
+
+1. [Install DuckDB](https://duckdb.org/docs/installation)
+2. Build the warehouse and marts by following the steps in [`2_DW_Mart_Build`](./2_DW_Mart_Build/#how-to-run)
+3. Run the analysis queries in [`1_EDA`](./1_EDA/)
+
+## Acknowledgements
+
+<!-- TODO: confirm the course name and link are correct -->
+Built while following the [SQL Data Engineering Course](https://github.com/lukebarousse/SQL_Data_Engineering_Course) by Luke Barousse. The dataset and some diagrams come from that course.
+
+[← Back to main README](../README.md)
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
