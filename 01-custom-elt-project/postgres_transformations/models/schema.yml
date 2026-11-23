@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: film_summary
+    columns:
+      - name: film_id
+        data_tests: [unique, not_null]

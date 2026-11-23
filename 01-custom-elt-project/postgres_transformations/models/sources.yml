@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: source_db
+    schema: public
+    tables:
+      - name: films
+        columns:
+          - name: film_id
+            data_tests: [unique, not_null]
+      - name: film_category
+      - name: actors
+        columns:
+          - name: actor_id
+            data_tests: [unique, not_null]
+      - name: film_actors
+      - name: users
+        columns:
+          - name: id
+            data_tests: [unique, not_null]

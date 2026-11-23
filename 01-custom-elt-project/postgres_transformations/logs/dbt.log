@@ -1,0 +1,1670 @@
+==================== 2026-11-23T23:13:15.815125Z | 01a20aaf-621e-7d81-abcd-04115517a360 ====================
+23:13:34.598567 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [18.8s]
+==================== 2026-11-23T23:25:34.855192Z | 01a20aba-a8f5-73c1-9361-48c6e7c451cc ====================
+23:25:59.561510 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [24.7s]
+[0m23:33:00.203121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83ccc5a7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83cf61f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83cb8afed0>]}
+
+
+============================== 23:33:00.214934 | f25ae359-5457-4b8b-84aa-6d9fa0736977 ==============================
+[0m23:33:00.214934 [info ] [MainThread]: Running with dbt=1.11.17
+[0m23:33:00.216067 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'partial_parse': 'True', 'log_format': 'default', 'profiles_dir': '/dbt', 'warn_error': 'None', 'invocation_command': 'dbt build', 'fail_fast': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'log_path': '/dbt/logs', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'write_json': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'use_colors': 'True', 'no_print': 'None'}
+[0m23:33:00.226113 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named '01-custom-elt-project'
+[0m23:33:00.228567 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.11193729, "process_in_blocks": "12576", "process_kernel_time": 0.424084, "process_mem_max_rss": "103276", "process_out_blocks": "2048", "process_user_time": 1.882519}
+[0m23:33:00.229777 [debug] [MainThread]: Command `dbt build` failed at 23:33:00.229570 after 0.11 seconds
+[0m23:33:00.230605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83cb75c640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83cb8ba330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83cb983bd0>]}
+[0m23:33:00.231290 [debug] [MainThread]: Flushing usage events
+[0m23:33:01.505360 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:38:13.011940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a55ba7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a8373250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a46d7ed0>]}
+
+
+============================== 23:38:13.025832 | 91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6 ==============================
+[0m23:38:13.025832 [info ] [MainThread]: Running with dbt=1.11.17
+[0m23:38:13.027276 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/dbt', 'no_print': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'log_format': 'default', 'empty': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'debug': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_path': '/dbt/logs', 'printer_width': '80', 'use_colors': 'True', 'invocation_command': 'dbt build'}
+[0m23:38:13.260507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a544fe10>]}
+[0m23:38:13.327254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a457c8d0>]}
+[0m23:38:13.328831 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m23:38:13.411736 [debug] [MainThread]: checksum: 6b6411fb925d7fe017d7428f9d9af996704b52c1bbfb75b401b39f0bcbc3f5dc, vars: {}, profile: , target: , version: 1.11.17
+[0m23:38:13.415309 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:38:13.416258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a4571250>]}
+[0m23:38:15.163737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a4580e60>]}
+[0m23:38:15.305506 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:38:15.316694 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:38:15.374175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '91d1f5ef-e9f5-4bb0-af7c-ff5e2ef49ee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a21dd630>]}
+[0m23:38:15.375674 [info ] [MainThread]: Found 1 model, 8 data tests, 5 sources, 478 macros
+[0m23:38:15.380476 [info ] [MainThread]: 
+[0m23:38:15.381612 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:38:15.382602 [info ] [MainThread]: 
+[0m23:38:15.384705 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:38:15.389943 [debug] [ThreadPool]: Acquiring new postgres connection 'list_destination_db'
+[0m23:38:15.512922 [debug] [ThreadPool]: Using postgres connection "list_destination_db"
+[0m23:38:15.514177 [debug] [ThreadPool]: On list_destination_db: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:38:15.516253 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:38:19.079776 [debug] [ThreadPool]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "destination_postgres" to address: Name or service not known
+
+[0m23:38:21.609542 [debug] [ThreadPool]: Postgres adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:38:21.610670 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m23:38:21.611660 [debug] [ThreadPool]: Postgres adapter: Error running SQL: macro list_schemas
+[0m23:38:21.612303 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m23:38:21.613983 [debug] [ThreadPool]: On list_destination_db: No close available on handle
+[0m23:38:21.616329 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:38:21.617010 [debug] [MainThread]: Connection 'list_destination_db' was properly closed.
+[0m23:38:21.617657 [info ] [MainThread]: 
+[0m23:38:21.618574 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 6.23 seconds (6.23s).
+[0m23:38:21.620259 [error] [MainThread]: Encountered an error:
+Database Error
+  could not translate host name "destination_postgres" to address: Name or service not known
+  
+[0m23:38:21.624142 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 8.702109, "process_in_blocks": "280", "process_kernel_time": 1.176925, "process_mem_max_rss": "130908", "process_out_blocks": "2176", "process_user_time": 3.93627}
+[0m23:38:21.625338 [debug] [MainThread]: Command `dbt build` failed at 23:38:21.625100 after 8.70 seconds
+[0m23:38:21.626071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb87f5f4e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8a47b3e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb87fff0a10>]}
+[0m23:38:21.627868 [debug] [MainThread]: Flushing usage events
+[0m23:38:23.532735 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:39:15.387294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf38ae7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf665b250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf2827ed0>]}
+
+
+============================== 23:39:15.396943 | 1631aec4-ea14-4a93-8342-7ae10b7f21d2 ==============================
+[0m23:39:15.396943 [info ] [MainThread]: Running with dbt=1.11.17
+[0m23:39:15.398335 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'debug': 'False', 'introspect': 'True', 'target_path': 'None', 'quiet': 'False', 'log_path': '/dbt/logs', 'indirect_selection': 'eager', 'static_parser': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'no_print': 'None', 'write_json': 'True', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'empty': 'False', 'profiles_dir': '/dbt', 'invocation_command': 'dbt build'}
+[0m23:39:15.596212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf373be10>]}
+[0m23:39:15.666648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf28e88d0>]}
+[0m23:39:15.668132 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m23:39:15.744174 [debug] [MainThread]: checksum: 6b6411fb925d7fe017d7428f9d9af996704b52c1bbfb75b401b39f0bcbc3f5dc, vars: {}, profile: , target: , version: 1.11.17
+[0m23:39:15.998011 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:39:15.999379 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:39:16.001157 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:39:16.104710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf28f7b50>]}
+[0m23:39:16.315513 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:39:16.326182 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:39:16.391742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf28e64e0>]}
+[0m23:39:16.392960 [info ] [MainThread]: Found 1 model, 8 data tests, 5 sources, 478 macros
+[0m23:39:16.397340 [info ] [MainThread]: 
+[0m23:39:16.399003 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:39:16.400813 [info ] [MainThread]: 
+[0m23:39:16.404179 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:39:16.407562 [debug] [ThreadPool]: Acquiring new postgres connection 'list_destination_db'
+[0m23:39:16.553151 [debug] [ThreadPool]: Using postgres connection "list_destination_db"
+[0m23:39:16.554101 [debug] [ThreadPool]: On list_destination_db: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:39:16.554857 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:39:16.579286 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.024 seconds
+[0m23:39:16.581093 [debug] [ThreadPool]: On list_destination_db: Close
+[0m23:39:16.582646 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_destination_db, now create_destination_db_analytics)
+[0m23:39:16.583678 [debug] [ThreadPool]: Creating schema "database: "destination_db"
+schema: "analytics"
+"
+[0m23:39:16.589525 [debug] [ThreadPool]: Using postgres connection "create_destination_db_analytics"
+[0m23:39:16.590294 [debug] [ThreadPool]: On create_destination_db_analytics: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "create_destination_db_analytics"} */
+create schema if not exists "analytics"
+[0m23:39:16.590862 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:39:16.600344 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.009 seconds
+[0m23:39:16.601735 [debug] [ThreadPool]: On create_destination_db_analytics: COMMIT
+[0m23:39:16.602309 [debug] [ThreadPool]: Using postgres connection "create_destination_db_analytics"
+[0m23:39:16.602813 [debug] [ThreadPool]: On create_destination_db_analytics: COMMIT
+[0m23:39:16.605393 [debug] [ThreadPool]: SQL status: COMMIT in 0.002 seconds
+[0m23:39:16.606045 [debug] [ThreadPool]: On create_destination_db_analytics: Close
+[0m23:39:16.608393 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_destination_db_analytics, now list_destination_db_analytics)
+[0m23:39:16.615886 [debug] [ThreadPool]: Using postgres connection "list_destination_db_analytics"
+[0m23:39:16.616741 [debug] [ThreadPool]: On list_destination_db_analytics: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db_analytics"} */
+select
+      'destination_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'destination_db' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m23:39:16.617616 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:39:16.636806 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.019 seconds
+[0m23:39:16.638487 [debug] [ThreadPool]: On list_destination_db_analytics: ROLLBACK
+[0m23:39:16.639549 [debug] [ThreadPool]: On list_destination_db_analytics: Close
+[0m23:39:16.644935 [debug] [MainThread]: Using postgres connection "master"
+[0m23:39:16.645815 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m23:39:16.646499 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:39:16.663825 [debug] [MainThread]: SQL status: SELECT 0 in 0.017 seconds
+[0m23:39:16.666142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf0bf1470>]}
+[0m23:39:16.667197 [debug] [MainThread]: On master: ROLLBACK
+[0m23:39:16.668251 [debug] [MainThread]: On master: COMMIT
+[0m23:39:16.668889 [debug] [MainThread]: Using postgres connection "master"
+[0m23:39:16.669376 [debug] [MainThread]: On master: COMMIT
+[0m23:39:16.670704 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m23:39:16.671462 [debug] [MainThread]: On master: Close
+[0m23:39:16.680983 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:39:16.682124 [info ] [Thread-1 (]: 1 of 9 START test source_not_null_source_db_actors_actor_id .................... [RUN]
+[0m23:39:16.683147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_destination_db_analytics, now test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739)
+[0m23:39:16.684138 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:39:16.703247 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:39:16.725325 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:39:16.746421 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:39:16.767445 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:39:16.768179 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from "destination_db"."public"."actors"
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:16.768756 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:16.778607 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:39:16.783373 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: ROLLBACK
+[0m23:39:16.784522 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: Close
+[0m23:39:16.785710 [info ] [Thread-1 (]: 1 of 9 PASS source_not_null_source_db_actors_actor_id .......................... [[32mPASS[0m in 0.10s]
+[0m23:39:16.786928 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:39:16.788168 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:39:16.789095 [info ] [Thread-1 (]: 2 of 9 START test source_not_null_source_db_films_film_id ...................... [RUN]
+[0m23:39:16.790447 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739, now test.elt.source_not_null_source_db_films_film_id.79986c8ea2)
+[0m23:39:16.791239 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:39:16.796773 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:39:16.805749 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:39:16.808735 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:39:16.818619 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:39:16.819296 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."public"."films"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:16.819909 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:16.831671 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.012 seconds
+[0m23:39:16.833799 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: ROLLBACK
+[0m23:39:16.835068 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: Close
+[0m23:39:16.836194 [info ] [Thread-1 (]: 2 of 9 PASS source_not_null_source_db_films_film_id ............................ [[32mPASS[0m in 0.05s]
+[0m23:39:16.837339 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:39:16.838469 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:39:16.839768 [info ] [Thread-1 (]: 3 of 9 START test source_not_null_source_db_users_id ........................... [RUN]
+[0m23:39:16.841217 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_films_film_id.79986c8ea2, now test.elt.source_not_null_source_db_users_id.82d5b3db50)
+[0m23:39:16.842523 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:39:16.848330 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:39:16.861682 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:39:16.865582 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:39:16.877847 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:39:16.878976 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_users_id.82d5b3db50"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "destination_db"."public"."users"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:16.879800 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:16.889314 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:39:16.891771 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: ROLLBACK
+[0m23:39:16.892916 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: Close
+[0m23:39:16.894372 [info ] [Thread-1 (]: 3 of 9 PASS source_not_null_source_db_users_id ................................. [[32mPASS[0m in 0.05s]
+[0m23:39:16.895657 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:39:16.896880 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:39:16.897932 [info ] [Thread-1 (]: 4 of 9 START test source_unique_source_db_actors_actor_id ...................... [RUN]
+[0m23:39:16.899690 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_users_id.82d5b3db50, now test.elt.source_unique_source_db_actors_actor_id.d235c981c0)
+[0m23:39:16.900613 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:39:16.909454 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:39:16.919542 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:39:16.922934 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:39:16.932147 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:39:16.932903 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."actors"
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:16.933429 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:16.942750 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:39:16.944870 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: ROLLBACK
+[0m23:39:16.945927 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: Close
+[0m23:39:16.946908 [info ] [Thread-1 (]: 4 of 9 PASS source_unique_source_db_actors_actor_id ............................ [[32mPASS[0m in 0.05s]
+[0m23:39:16.947945 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:39:16.949022 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:39:16.950018 [info ] [Thread-1 (]: 5 of 9 START test source_unique_source_db_films_film_id ........................ [RUN]
+[0m23:39:16.951289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_actors_actor_id.d235c981c0, now test.elt.source_unique_source_db_films_film_id.ca06ad8862)
+[0m23:39:16.952470 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:39:16.957633 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:39:16.967132 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:39:16.970346 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:39:16.979443 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:39:16.980250 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_films_film_id.ca06ad8862"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."films"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:16.980871 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:16.991594 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m23:39:16.994179 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: ROLLBACK
+[0m23:39:16.995232 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: Close
+[0m23:39:16.996159 [info ] [Thread-1 (]: 5 of 9 PASS source_unique_source_db_films_film_id .............................. [[32mPASS[0m in 0.05s]
+[0m23:39:16.997153 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:39:16.998195 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:39:16.999344 [info ] [Thread-1 (]: 6 of 9 START test source_unique_source_db_users_id ............................. [RUN]
+[0m23:39:17.000556 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_films_film_id.ca06ad8862, now test.elt.source_unique_source_db_users_id.b76f0d3c2d)
+[0m23:39:17.002008 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:39:17.007395 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:39:17.016851 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:39:17.019976 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:39:17.030105 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:39:17.030939 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_users_id.b76f0d3c2d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."users"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:17.031699 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:17.041499 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:39:17.044031 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: ROLLBACK
+[0m23:39:17.045152 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: Close
+[0m23:39:17.046207 [info ] [Thread-1 (]: 6 of 9 PASS source_unique_source_db_users_id ................................... [[32mPASS[0m in 0.05s]
+[0m23:39:17.047366 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:39:17.048640 [debug] [Thread-1 (]: Began running node model.elt.film_summary
+[0m23:39:17.050715 [info ] [Thread-1 (]: 7 of 9 START sql table model analytics.film_summary ............................ [RUN]
+[0m23:39:17.052395 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_users_id.b76f0d3c2d, now model.elt.film_summary)
+[0m23:39:17.053454 [debug] [Thread-1 (]: Began compiling node model.elt.film_summary
+[0m23:39:17.062372 [debug] [Thread-1 (]: Writing injected SQL for node "model.elt.film_summary"
+[0m23:39:17.070992 [debug] [Thread-1 (]: Began executing node model.elt.film_summary
+[0m23:39:17.118503 [debug] [Thread-1 (]: Writing runtime sql for node "model.elt.film_summary"
+[0m23:39:17.127299 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:39:17.128425 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+
+  
+    
+
+  create  table "destination_db"."analytics"."film_summary__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    f.film_id,
+    f.title,
+    f.release_date,
+    f.rating,
+    f.user_rating,
+    f.price,
+    string_agg(distinct c.category_name, ', ') as categories,
+    string_agg(distinct a.actor_name, ', ') as actors
+from "destination_db"."public"."films" f
+left join "destination_db"."public"."film_category" c on c.film_id = f.film_id
+left join "destination_db"."public"."film_actors" fa on fa.film_id = f.film_id
+left join "destination_db"."public"."actors" a on a.actor_id = fa.actor_id
+group by 1, 2, 3, 4, 5, 6
+  );
+  
+[0m23:39:17.129367 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:17.141396 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.012 seconds
+[0m23:39:17.152196 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:39:17.153139 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+alter table "destination_db"."analytics"."film_summary__dbt_tmp" rename to "film_summary"
+[0m23:39:17.154592 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m23:39:17.172009 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:39:17.172915 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:39:17.173609 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:39:17.176923 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m23:39:17.184528 [debug] [Thread-1 (]: Applying DROP to: "destination_db"."analytics"."film_summary__dbt_backup"
+[0m23:39:17.189726 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:39:17.190462 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+drop table if exists "destination_db"."analytics"."film_summary__dbt_backup" cascade
+[0m23:39:17.192995 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m23:39:17.195082 [debug] [Thread-1 (]: On model.elt.film_summary: Close
+[0m23:39:17.197769 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1631aec4-ea14-4a93-8342-7ae10b7f21d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabeda9ed00>]}
+[0m23:39:17.198964 [info ] [Thread-1 (]: 7 of 9 OK created sql table model analytics.film_summary ....................... [[32mSELECT 20[0m in 0.14s]
+[0m23:39:17.199957 [debug] [Thread-1 (]: Finished running node model.elt.film_summary
+[0m23:39:17.201826 [debug] [Thread-1 (]: Began running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:39:17.203053 [info ] [Thread-1 (]: 8 of 9 START test not_null_film_summary_film_id ................................ [RUN]
+[0m23:39:17.204002 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.elt.film_summary, now test.elt.not_null_film_summary_film_id.83d894194a)
+[0m23:39:17.204967 [debug] [Thread-1 (]: Began compiling node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:39:17.209760 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:39:17.223816 [debug] [Thread-1 (]: Began executing node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:39:17.230565 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:39:17.244139 [debug] [Thread-1 (]: Using postgres connection "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:39:17.245025 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.not_null_film_summary_film_id.83d894194a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."analytics"."film_summary"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:17.245599 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:17.254701 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:39:17.256696 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: ROLLBACK
+[0m23:39:17.257945 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: Close
+[0m23:39:17.259017 [info ] [Thread-1 (]: 8 of 9 PASS not_null_film_summary_film_id ...................................... [[32mPASS[0m in 0.06s]
+[0m23:39:17.260362 [debug] [Thread-1 (]: Finished running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:39:17.261622 [debug] [Thread-1 (]: Began running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:39:17.262452 [info ] [Thread-1 (]: 9 of 9 START test unique_film_summary_film_id .................................. [RUN]
+[0m23:39:17.263812 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.not_null_film_summary_film_id.83d894194a, now test.elt.unique_film_summary_film_id.0bd05f0967)
+[0m23:39:17.264732 [debug] [Thread-1 (]: Began compiling node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:39:17.269736 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:39:17.291422 [debug] [Thread-1 (]: Began executing node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:39:17.296481 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:39:17.311389 [debug] [Thread-1 (]: Using postgres connection "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:39:17.312959 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.unique_film_summary_film_id.0bd05f0967"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."analytics"."film_summary"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:39:17.314734 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:17.330940 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.016 seconds
+[0m23:39:17.333740 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: ROLLBACK
+[0m23:39:17.335077 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: Close
+[0m23:39:17.336252 [info ] [Thread-1 (]: 9 of 9 PASS unique_film_summary_film_id ........................................ [[32mPASS[0m in 0.07s]
+[0m23:39:17.337402 [debug] [Thread-1 (]: Finished running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:39:17.340722 [debug] [MainThread]: On master: COMMIT
+[0m23:39:17.342031 [debug] [MainThread]: Using postgres connection "master"
+[0m23:39:17.343699 [debug] [MainThread]: On master: COMMIT
+[0m23:39:17.344453 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:39:17.359115 [debug] [MainThread]: SQL status: COMMIT in 0.015 seconds
+[0m23:39:17.359848 [debug] [MainThread]: On master: Close
+[0m23:39:17.360545 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:39:17.361029 [debug] [MainThread]: Connection 'test.elt.unique_film_summary_film_id.0bd05f0967' was properly closed.
+[0m23:39:17.361540 [info ] [MainThread]: 
+[0m23:39:17.362272 [info ] [MainThread]: Finished running 1 table model, 8 data tests in 0 hours 0 minutes and 0.96 seconds (0.96s).
+[0m23:39:17.366177 [debug] [MainThread]: Command end result
+[0m23:39:17.417419 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:39:17.424609 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:39:17.436531 [debug] [MainThread]: Wrote artifact RunExecutionResult to /dbt/target/run_results.json
+[0m23:39:17.437161 [info ] [MainThread]: 
+[0m23:39:17.438053 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:39:17.439195 [info ] [MainThread]: 
+[0m23:39:17.441147 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m23:39:17.444637 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 2.1365054, "process_in_blocks": "32", "process_kernel_time": 0.568209, "process_mem_max_rss": "126924", "process_out_blocks": "2200", "process_user_time": 3.135297}
+[0m23:39:17.445965 [debug] [MainThread]: Command `dbt build` succeeded at 23:39:17.445755 after 2.14 seconds
+[0m23:39:17.447361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabf2bebe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabef33c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabef33e150>]}
+[0m23:39:17.448419 [debug] [MainThread]: Flushing usage events
+[0m23:39:18.545588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:40:39.049554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d1aaa7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d446f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d0703ed0>]}
+
+
+============================== 23:40:39.059002 | 43a0f17b-c7f7-4dd0-980d-254b6946643c ==============================
+[0m23:40:39.059002 [info ] [MainThread]: Running with dbt=1.11.17
+[0m23:40:39.060020 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'introspect': 'True', 'quiet': 'False', 'target_path': 'None', 'static_parser': 'True', 'log_format': 'default', 'version_check': 'True', 'debug': 'False', 'warn_error': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'profiles_dir': '/dbt', 'invocation_command': 'dbt build', 'log_cache_events': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'log_path': '/dbt/logs'}
+[0m23:40:39.240604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d152be10>]}
+[0m23:40:39.307890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d06588d0>]}
+[0m23:40:39.323231 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m23:40:39.395457 [debug] [MainThread]: checksum: 6b6411fb925d7fe017d7428f9d9af996704b52c1bbfb75b401b39f0bcbc3f5dc, vars: {}, profile: , target: , version: 1.11.17
+[0m23:40:39.586004 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:40:39.586826 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:40:39.587476 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:40:39.638392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d064fb50>]}
+[0m23:40:39.761912 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:40:39.769435 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:40:39.812398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d065e4e0>]}
+[0m23:40:39.813430 [info ] [MainThread]: Found 1 model, 8 data tests, 5 sources, 478 macros
+[0m23:40:39.817515 [info ] [MainThread]: 
+[0m23:40:39.818798 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:40:39.820160 [info ] [MainThread]: 
+[0m23:40:39.822408 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:40:39.826679 [debug] [ThreadPool]: Acquiring new postgres connection 'list_destination_db'
+[0m23:40:39.960405 [debug] [ThreadPool]: Using postgres connection "list_destination_db"
+[0m23:40:39.961216 [debug] [ThreadPool]: On list_destination_db: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:40:39.961811 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:40:39.984974 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.023 seconds
+[0m23:40:39.987179 [debug] [ThreadPool]: On list_destination_db: Close
+[0m23:40:39.989633 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_destination_db, now list_destination_db_analytics)
+[0m23:40:39.996804 [debug] [ThreadPool]: Using postgres connection "list_destination_db_analytics"
+[0m23:40:39.997799 [debug] [ThreadPool]: On list_destination_db_analytics: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db_analytics"} */
+select
+      'destination_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'destination_db' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m23:40:39.998636 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:40:40.017221 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.018 seconds
+[0m23:40:40.018991 [debug] [ThreadPool]: On list_destination_db_analytics: ROLLBACK
+[0m23:40:40.019924 [debug] [ThreadPool]: On list_destination_db_analytics: Close
+[0m23:40:40.025176 [debug] [MainThread]: Using postgres connection "master"
+[0m23:40:40.026121 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m23:40:40.026750 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:40:40.040137 [debug] [MainThread]: SQL status: SELECT 0 in 0.013 seconds
+[0m23:40:40.042030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06ce511470>]}
+[0m23:40:40.042924 [debug] [MainThread]: On master: ROLLBACK
+[0m23:40:40.043826 [debug] [MainThread]: On master: COMMIT
+[0m23:40:40.044456 [debug] [MainThread]: Using postgres connection "master"
+[0m23:40:40.045051 [debug] [MainThread]: On master: COMMIT
+[0m23:40:40.045932 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m23:40:40.046536 [debug] [MainThread]: On master: Close
+[0m23:40:40.058594 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:40:40.059601 [info ] [Thread-1 (]: 1 of 9 START test source_not_null_source_db_actors_actor_id .................... [RUN]
+[0m23:40:40.060460 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_destination_db_analytics, now test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739)
+[0m23:40:40.061345 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:40:40.079135 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:40:40.089025 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:40:40.109986 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:40:40.119863 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:40:40.120536 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from "destination_db"."public"."actors"
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.121033 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.132873 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.012 seconds
+[0m23:40:40.137964 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: ROLLBACK
+[0m23:40:40.139273 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: Close
+[0m23:40:40.140337 [info ] [Thread-1 (]: 1 of 9 PASS source_not_null_source_db_actors_actor_id .......................... [[32mPASS[0m in 0.08s]
+[0m23:40:40.141655 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:40:40.142988 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:40:40.143832 [info ] [Thread-1 (]: 2 of 9 START test source_not_null_source_db_films_film_id ...................... [RUN]
+[0m23:40:40.145297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739, now test.elt.source_not_null_source_db_films_film_id.79986c8ea2)
+[0m23:40:40.146981 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:40:40.151895 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:40:40.160849 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:40:40.163868 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:40:40.173872 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:40:40.174695 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."public"."films"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.175269 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.186462 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m23:40:40.189269 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: ROLLBACK
+[0m23:40:40.190515 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: Close
+[0m23:40:40.191755 [info ] [Thread-1 (]: 2 of 9 PASS source_not_null_source_db_films_film_id ............................ [[32mPASS[0m in 0.05s]
+[0m23:40:40.193088 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:40:40.194413 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:40:40.195331 [info ] [Thread-1 (]: 3 of 9 START test source_not_null_source_db_users_id ........................... [RUN]
+[0m23:40:40.196573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_films_film_id.79986c8ea2, now test.elt.source_not_null_source_db_users_id.82d5b3db50)
+[0m23:40:40.197784 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:40:40.205539 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:40:40.216177 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:40:40.219079 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:40:40.228007 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:40:40.229061 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_users_id.82d5b3db50"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "destination_db"."public"."users"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.230017 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.241055 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m23:40:40.243518 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: ROLLBACK
+[0m23:40:40.244689 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: Close
+[0m23:40:40.245821 [info ] [Thread-1 (]: 3 of 9 PASS source_not_null_source_db_users_id ................................. [[32mPASS[0m in 0.05s]
+[0m23:40:40.247269 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:40:40.248538 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:40:40.249421 [info ] [Thread-1 (]: 4 of 9 START test source_unique_source_db_actors_actor_id ...................... [RUN]
+[0m23:40:40.250489 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_users_id.82d5b3db50, now test.elt.source_unique_source_db_actors_actor_id.d235c981c0)
+[0m23:40:40.251312 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:40:40.260094 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:40:40.270654 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:40:40.273294 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:40:40.281995 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:40:40.282648 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."actors"
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.283182 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.294851 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.012 seconds
+[0m23:40:40.296934 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: ROLLBACK
+[0m23:40:40.298007 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: Close
+[0m23:40:40.299121 [info ] [Thread-1 (]: 4 of 9 PASS source_unique_source_db_actors_actor_id ............................ [[32mPASS[0m in 0.05s]
+[0m23:40:40.300524 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:40:40.301692 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:40:40.302716 [info ] [Thread-1 (]: 5 of 9 START test source_unique_source_db_films_film_id ........................ [RUN]
+[0m23:40:40.303990 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_actors_actor_id.d235c981c0, now test.elt.source_unique_source_db_films_film_id.ca06ad8862)
+[0m23:40:40.304914 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:40:40.310653 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:40:40.319650 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:40:40.322334 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:40:40.333525 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:40:40.334447 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_films_film_id.ca06ad8862"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."films"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.335357 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.347935 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.012 seconds
+[0m23:40:40.350425 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: ROLLBACK
+[0m23:40:40.351804 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: Close
+[0m23:40:40.353121 [info ] [Thread-1 (]: 5 of 9 PASS source_unique_source_db_films_film_id .............................. [[32mPASS[0m in 0.05s]
+[0m23:40:40.355010 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:40:40.356145 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:40:40.357403 [info ] [Thread-1 (]: 6 of 9 START test source_unique_source_db_users_id ............................. [RUN]
+[0m23:40:40.358776 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_films_film_id.ca06ad8862, now test.elt.source_unique_source_db_users_id.b76f0d3c2d)
+[0m23:40:40.359606 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:40:40.365005 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:40:40.373804 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:40:40.377504 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:40:40.386794 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:40:40.387517 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_users_id.b76f0d3c2d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."users"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.388074 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.398029 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:40:40.400144 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: ROLLBACK
+[0m23:40:40.401578 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: Close
+[0m23:40:40.402908 [info ] [Thread-1 (]: 6 of 9 PASS source_unique_source_db_users_id ................................... [[32mPASS[0m in 0.04s]
+[0m23:40:40.404478 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:40:40.405701 [debug] [Thread-1 (]: Began running node model.elt.film_summary
+[0m23:40:40.406822 [info ] [Thread-1 (]: 7 of 9 START sql table model analytics.film_summary ............................ [RUN]
+[0m23:40:40.408158 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_users_id.b76f0d3c2d, now model.elt.film_summary)
+[0m23:40:40.409327 [debug] [Thread-1 (]: Began compiling node model.elt.film_summary
+[0m23:40:40.414683 [debug] [Thread-1 (]: Writing injected SQL for node "model.elt.film_summary"
+[0m23:40:40.426122 [debug] [Thread-1 (]: Began executing node model.elt.film_summary
+[0m23:40:40.474647 [debug] [Thread-1 (]: Writing runtime sql for node "model.elt.film_summary"
+[0m23:40:40.483183 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:40:40.483810 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+
+  
+    
+
+  create  table "destination_db"."analytics"."film_summary__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    f.film_id,
+    f.title,
+    f.release_date,
+    f.rating,
+    f.user_rating,
+    f.price,
+    string_agg(distinct c.category_name, ', ') as categories,
+    string_agg(distinct a.actor_name, ', ') as actors
+from "destination_db"."public"."films" f
+left join "destination_db"."public"."film_category" c on c.film_id = f.film_id
+left join "destination_db"."public"."film_actors" fa on fa.film_id = f.film_id
+left join "destination_db"."public"."actors" a on a.actor_id = fa.actor_id
+group by 1, 2, 3, 4, 5, 6
+  );
+  
+[0m23:40:40.484552 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.497599 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.013 seconds
+[0m23:40:40.508871 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:40:40.509778 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+alter table "destination_db"."analytics"."film_summary" rename to "film_summary__dbt_backup"
+[0m23:40:40.511077 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m23:40:40.515242 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:40:40.516121 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+alter table "destination_db"."analytics"."film_summary__dbt_tmp" rename to "film_summary"
+[0m23:40:40.517328 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m23:40:40.537961 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:40:40.538776 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:40:40.539351 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:40:40.542870 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m23:40:40.550779 [debug] [Thread-1 (]: Applying DROP to: "destination_db"."analytics"."film_summary__dbt_backup"
+[0m23:40:40.556377 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:40:40.557174 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+drop table if exists "destination_db"."analytics"."film_summary__dbt_backup" cascade
+[0m23:40:40.561494 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m23:40:40.564403 [debug] [Thread-1 (]: On model.elt.film_summary: Close
+[0m23:40:40.566897 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '43a0f17b-c7f7-4dd0-980d-254b6946643c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06cd0a3040>]}
+[0m23:40:40.568507 [info ] [Thread-1 (]: 7 of 9 OK created sql table model analytics.film_summary ....................... [[32mSELECT 20[0m in 0.16s]
+[0m23:40:40.569852 [debug] [Thread-1 (]: Finished running node model.elt.film_summary
+[0m23:40:40.571514 [debug] [Thread-1 (]: Began running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:40:40.572517 [info ] [Thread-1 (]: 8 of 9 START test not_null_film_summary_film_id ................................ [RUN]
+[0m23:40:40.573541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.elt.film_summary, now test.elt.not_null_film_summary_film_id.83d894194a)
+[0m23:40:40.574382 [debug] [Thread-1 (]: Began compiling node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:40:40.579727 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:40:40.588721 [debug] [Thread-1 (]: Began executing node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:40:40.591502 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:40:40.601195 [debug] [Thread-1 (]: Using postgres connection "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:40:40.602618 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.not_null_film_summary_film_id.83d894194a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."analytics"."film_summary"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.603491 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.614843 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m23:40:40.623651 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: ROLLBACK
+[0m23:40:40.624836 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: Close
+[0m23:40:40.625783 [info ] [Thread-1 (]: 8 of 9 PASS not_null_film_summary_film_id ...................................... [[32mPASS[0m in 0.05s]
+[0m23:40:40.626837 [debug] [Thread-1 (]: Finished running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:40:40.627860 [debug] [Thread-1 (]: Began running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:40:40.628750 [info ] [Thread-1 (]: 9 of 9 START test unique_film_summary_film_id .................................. [RUN]
+[0m23:40:40.630001 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.not_null_film_summary_film_id.83d894194a, now test.elt.unique_film_summary_film_id.0bd05f0967)
+[0m23:40:40.630929 [debug] [Thread-1 (]: Began compiling node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:40:40.635931 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:40:40.646874 [debug] [Thread-1 (]: Began executing node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:40:40.649639 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:40:40.658606 [debug] [Thread-1 (]: Using postgres connection "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:40:40.659498 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.unique_film_summary_film_id.0bd05f0967"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."analytics"."film_summary"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:40:40.660086 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:40:40.669592 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:40:40.671738 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: ROLLBACK
+[0m23:40:40.672887 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: Close
+[0m23:40:40.674166 [info ] [Thread-1 (]: 9 of 9 PASS unique_film_summary_film_id ........................................ [[32mPASS[0m in 0.04s]
+[0m23:40:40.675807 [debug] [Thread-1 (]: Finished running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:40:40.680694 [debug] [MainThread]: On master: COMMIT
+[0m23:40:40.682442 [debug] [MainThread]: Using postgres connection "master"
+[0m23:40:40.683421 [debug] [MainThread]: On master: COMMIT
+[0m23:40:40.684448 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:40:40.693681 [debug] [MainThread]: SQL status: COMMIT in 0.009 seconds
+[0m23:40:40.694735 [debug] [MainThread]: On master: Close
+[0m23:40:40.695641 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:40:40.696149 [debug] [MainThread]: Connection 'test.elt.unique_film_summary_film_id.0bd05f0967' was properly closed.
+[0m23:40:40.696733 [info ] [MainThread]: 
+[0m23:40:40.697569 [info ] [MainThread]: Finished running 1 table model, 8 data tests in 0 hours 0 minutes and 0.87 seconds (0.87s).
+[0m23:40:40.700255 [debug] [MainThread]: Command end result
+[0m23:40:40.756207 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:40:40.763133 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:40:40.775146 [debug] [MainThread]: Wrote artifact RunExecutionResult to /dbt/target/run_results.json
+[0m23:40:40.776081 [info ] [MainThread]: 
+[0m23:40:40.776963 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:40:40.777957 [info ] [MainThread]: 
+[0m23:40:40.779707 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m23:40:40.782450 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 1.8186827, "process_in_blocks": "0", "process_kernel_time": 0.629024, "process_mem_max_rss": "129716", "process_out_blocks": "2200", "process_user_time": 2.769739}
+[0m23:40:40.783401 [debug] [MainThread]: Command `dbt build` succeeded at 23:40:40.783280 after 1.82 seconds
+[0m23:40:40.784512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06d0a8be90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06cd15c9f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06cd15d7b0>]}
+[0m23:40:40.785690 [debug] [MainThread]: Flushing usage events
+[0m23:40:41.918369 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:41:46.792774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb22fdd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb4efb390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb11abb10>]}
+
+
+============================== 23:41:46.797987 | 48748a31-7115-4dfe-ad1d-416c67dc50b0 ==============================
+[0m23:41:46.797987 [info ] [MainThread]: Running with dbt=1.11.17
+[0m23:41:46.799060 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'False', 'log_format': 'default', 'fail_fast': 'False', 'partial_parse': 'True', 'debug': 'False', 'profiles_dir': '/dbt', 'quiet': 'False', 'invocation_command': 'dbt build', 'static_parser': 'True', 'log_path': '/dbt/logs', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'indirect_selection': 'eager', 'no_print': 'None', 'introspect': 'True', 'log_cache_events': 'False'}
+[0m23:41:47.022219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb1e2d5b0>]}
+[0m23:41:47.107811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb116af10>]}
+[0m23:41:47.110509 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m23:41:47.199864 [debug] [MainThread]: checksum: 6b6411fb925d7fe017d7428f9d9af996704b52c1bbfb75b401b39f0bcbc3f5dc, vars: {}, profile: , target: , version: 1.11.17
+[0m23:41:47.397733 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:41:47.398511 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:41:47.399019 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:41:47.449961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb10ab850>]}
+[0m23:41:47.574184 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:41:47.581811 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:41:47.689811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb2310140>]}
+[0m23:41:47.690700 [info ] [MainThread]: Found 1 model, 8 data tests, 5 sources, 478 macros
+[0m23:41:47.694900 [info ] [MainThread]: 
+[0m23:41:47.696094 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:41:47.697175 [info ] [MainThread]: 
+[0m23:41:47.698767 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:41:47.703780 [debug] [ThreadPool]: Acquiring new postgres connection 'list_destination_db'
+[0m23:41:47.772892 [debug] [ThreadPool]: Using postgres connection "list_destination_db"
+[0m23:41:47.773885 [debug] [ThreadPool]: On list_destination_db: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:41:47.774498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:47.788652 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.014 seconds
+[0m23:41:47.791057 [debug] [ThreadPool]: On list_destination_db: Close
+[0m23:41:47.793648 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_destination_db, now list_destination_db_analytics)
+[0m23:41:47.801773 [debug] [ThreadPool]: Using postgres connection "list_destination_db_analytics"
+[0m23:41:47.803044 [debug] [ThreadPool]: On list_destination_db_analytics: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "list_destination_db_analytics"} */
+select
+      'destination_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'destination_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'destination_db' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m23:41:47.804158 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:41:47.817488 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.013 seconds
+[0m23:41:47.819417 [debug] [ThreadPool]: On list_destination_db_analytics: ROLLBACK
+[0m23:41:47.820282 [debug] [ThreadPool]: On list_destination_db_analytics: Close
+[0m23:41:47.826538 [debug] [MainThread]: Using postgres connection "master"
+[0m23:41:47.827378 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m23:41:47.828097 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:41:47.840678 [debug] [MainThread]: SQL status: SELECT 0 in 0.012 seconds
+[0m23:41:47.842670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb03aea50>]}
+[0m23:41:47.843915 [debug] [MainThread]: On master: ROLLBACK
+[0m23:41:47.845232 [debug] [MainThread]: On master: COMMIT
+[0m23:41:47.846110 [debug] [MainThread]: Using postgres connection "master"
+[0m23:41:47.846758 [debug] [MainThread]: On master: COMMIT
+[0m23:41:47.848024 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m23:41:47.848732 [debug] [MainThread]: On master: Close
+[0m23:41:47.856477 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:41:47.857510 [info ] [Thread-1 (]: 1 of 9 START test source_not_null_source_db_actors_actor_id .................... [RUN]
+[0m23:41:47.858811 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_destination_db_analytics, now test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739)
+[0m23:41:47.860049 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:41:47.877938 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:41:47.887175 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:41:47.908816 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:41:47.918952 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"
+[0m23:41:47.919670 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from "destination_db"."public"."actors"
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:47.920267 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:47.930628 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:41:47.935763 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: ROLLBACK
+[0m23:41:47.937062 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739: Close
+[0m23:41:47.938284 [info ] [Thread-1 (]: 1 of 9 PASS source_not_null_source_db_actors_actor_id .......................... [[32mPASS[0m in 0.08s]
+[0m23:41:47.939832 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739
+[0m23:41:47.941091 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:41:47.942158 [info ] [Thread-1 (]: 2 of 9 START test source_not_null_source_db_films_film_id ...................... [RUN]
+[0m23:41:47.943715 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_actors_actor_id.ab0e15b739, now test.elt.source_not_null_source_db_films_film_id.79986c8ea2)
+[0m23:41:47.944992 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:41:47.949916 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:41:47.958812 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:41:47.962003 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:41:47.970328 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"
+[0m23:41:47.971103 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_films_film_id.79986c8ea2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."public"."films"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:47.971656 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:47.982094 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:41:47.984406 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: ROLLBACK
+[0m23:41:47.985655 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_films_film_id.79986c8ea2: Close
+[0m23:41:47.986818 [info ] [Thread-1 (]: 2 of 9 PASS source_not_null_source_db_films_film_id ............................ [[32mPASS[0m in 0.04s]
+[0m23:41:47.988302 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_films_film_id.79986c8ea2
+[0m23:41:47.989426 [debug] [Thread-1 (]: Began running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:41:47.990366 [info ] [Thread-1 (]: 3 of 9 START test source_not_null_source_db_users_id ........................... [RUN]
+[0m23:41:47.991813 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_films_film_id.79986c8ea2, now test.elt.source_not_null_source_db_users_id.82d5b3db50)
+[0m23:41:47.992658 [debug] [Thread-1 (]: Began compiling node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:41:47.997606 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:41:48.006743 [debug] [Thread-1 (]: Began executing node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:41:48.009620 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:41:48.017886 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_not_null_source_db_users_id.82d5b3db50"
+[0m23:41:48.018592 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_not_null_source_db_users_id.82d5b3db50"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "destination_db"."public"."users"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.019101 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.028666 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:41:48.030576 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: ROLLBACK
+[0m23:41:48.031736 [debug] [Thread-1 (]: On test.elt.source_not_null_source_db_users_id.82d5b3db50: Close
+[0m23:41:48.032809 [info ] [Thread-1 (]: 3 of 9 PASS source_not_null_source_db_users_id ................................. [[32mPASS[0m in 0.04s]
+[0m23:41:48.034396 [debug] [Thread-1 (]: Finished running node test.elt.source_not_null_source_db_users_id.82d5b3db50
+[0m23:41:48.035609 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:41:48.036672 [info ] [Thread-1 (]: 4 of 9 START test source_unique_source_db_actors_actor_id ...................... [RUN]
+[0m23:41:48.038219 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_not_null_source_db_users_id.82d5b3db50, now test.elt.source_unique_source_db_actors_actor_id.d235c981c0)
+[0m23:41:48.039113 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:41:48.046861 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:41:48.055475 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:41:48.058227 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:41:48.066068 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"
+[0m23:41:48.066811 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_actors_actor_id.d235c981c0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."actors"
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.067349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.077896 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:41:48.080053 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: ROLLBACK
+[0m23:41:48.081218 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_actors_actor_id.d235c981c0: Close
+[0m23:41:48.082575 [info ] [Thread-1 (]: 4 of 9 PASS source_unique_source_db_actors_actor_id ............................ [[32mPASS[0m in 0.04s]
+[0m23:41:48.083750 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_actors_actor_id.d235c981c0
+[0m23:41:48.084805 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:41:48.085865 [info ] [Thread-1 (]: 5 of 9 START test source_unique_source_db_films_film_id ........................ [RUN]
+[0m23:41:48.087141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_actors_actor_id.d235c981c0, now test.elt.source_unique_source_db_films_film_id.ca06ad8862)
+[0m23:41:48.087949 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:41:48.095752 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:41:48.119849 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:41:48.122659 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:41:48.131858 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_films_film_id.ca06ad8862"
+[0m23:41:48.132550 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_films_film_id.ca06ad8862"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."films"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.133096 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.142366 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:41:48.144665 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: ROLLBACK
+[0m23:41:48.145923 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_films_film_id.ca06ad8862: Close
+[0m23:41:48.147099 [info ] [Thread-1 (]: 5 of 9 PASS source_unique_source_db_films_film_id .............................. [[32mPASS[0m in 0.06s]
+[0m23:41:48.148393 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_films_film_id.ca06ad8862
+[0m23:41:48.149637 [debug] [Thread-1 (]: Began running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:41:48.150704 [info ] [Thread-1 (]: 6 of 9 START test source_unique_source_db_users_id ............................. [RUN]
+[0m23:41:48.152322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_films_film_id.ca06ad8862, now test.elt.source_unique_source_db_users_id.b76f0d3c2d)
+[0m23:41:48.153131 [debug] [Thread-1 (]: Began compiling node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:41:48.157963 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:41:48.166835 [debug] [Thread-1 (]: Began executing node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:41:48.170438 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:41:48.178655 [debug] [Thread-1 (]: Using postgres connection "test.elt.source_unique_source_db_users_id.b76f0d3c2d"
+[0m23:41:48.179404 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.source_unique_source_db_users_id.b76f0d3c2d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."public"."users"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.179969 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.189214 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:41:48.191836 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: ROLLBACK
+[0m23:41:48.193040 [debug] [Thread-1 (]: On test.elt.source_unique_source_db_users_id.b76f0d3c2d: Close
+[0m23:41:48.194224 [info ] [Thread-1 (]: 6 of 9 PASS source_unique_source_db_users_id ................................... [[32mPASS[0m in 0.04s]
+[0m23:41:48.195301 [debug] [Thread-1 (]: Finished running node test.elt.source_unique_source_db_users_id.b76f0d3c2d
+[0m23:41:48.196473 [debug] [Thread-1 (]: Began running node model.elt.film_summary
+[0m23:41:48.197620 [info ] [Thread-1 (]: 7 of 9 START sql table model analytics.film_summary ............................ [RUN]
+[0m23:41:48.198938 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.source_unique_source_db_users_id.b76f0d3c2d, now model.elt.film_summary)
+[0m23:41:48.199932 [debug] [Thread-1 (]: Began compiling node model.elt.film_summary
+[0m23:41:48.204437 [debug] [Thread-1 (]: Writing injected SQL for node "model.elt.film_summary"
+[0m23:41:48.212086 [debug] [Thread-1 (]: Began executing node model.elt.film_summary
+[0m23:41:48.258039 [debug] [Thread-1 (]: Writing runtime sql for node "model.elt.film_summary"
+[0m23:41:48.266525 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:41:48.267247 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+
+  
+    
+
+  create  table "destination_db"."analytics"."film_summary__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    f.film_id,
+    f.title,
+    f.release_date,
+    f.rating,
+    f.user_rating,
+    f.price,
+    string_agg(distinct c.category_name, ', ') as categories,
+    string_agg(distinct a.actor_name, ', ') as actors
+from "destination_db"."public"."films" f
+left join "destination_db"."public"."film_category" c on c.film_id = f.film_id
+left join "destination_db"."public"."film_actors" fa on fa.film_id = f.film_id
+left join "destination_db"."public"."actors" a on a.actor_id = fa.actor_id
+group by 1, 2, 3, 4, 5, 6
+  );
+  
+[0m23:41:48.267764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.280234 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.012 seconds
+[0m23:41:48.291105 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:41:48.292415 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+alter table "destination_db"."analytics"."film_summary" rename to "film_summary__dbt_backup"
+[0m23:41:48.293733 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m23:41:48.297396 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:41:48.298267 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+alter table "destination_db"."analytics"."film_summary__dbt_tmp" rename to "film_summary"
+[0m23:41:48.299462 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m23:41:48.319300 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:41:48.320331 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:41:48.321005 [debug] [Thread-1 (]: On model.elt.film_summary: COMMIT
+[0m23:41:48.327506 [debug] [Thread-1 (]: SQL status: COMMIT in 0.006 seconds
+[0m23:41:48.338121 [debug] [Thread-1 (]: Applying DROP to: "destination_db"."analytics"."film_summary__dbt_backup"
+[0m23:41:48.343410 [debug] [Thread-1 (]: Using postgres connection "model.elt.film_summary"
+[0m23:41:48.344292 [debug] [Thread-1 (]: On model.elt.film_summary: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "model.elt.film_summary"} */
+drop table if exists "destination_db"."analytics"."film_summary__dbt_backup" cascade
+[0m23:41:48.348857 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m23:41:48.351363 [debug] [Thread-1 (]: On model.elt.film_summary: Close
+[0m23:41:48.353959 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48748a31-7115-4dfe-ad1d-416c67dc50b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6badb5e4e0>]}
+[0m23:41:48.355185 [info ] [Thread-1 (]: 7 of 9 OK created sql table model analytics.film_summary ....................... [[32mSELECT 20[0m in 0.15s]
+[0m23:41:48.356437 [debug] [Thread-1 (]: Finished running node model.elt.film_summary
+[0m23:41:48.358569 [debug] [Thread-1 (]: Began running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:41:48.359603 [info ] [Thread-1 (]: 8 of 9 START test not_null_film_summary_film_id ................................ [RUN]
+[0m23:41:48.361015 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.elt.film_summary, now test.elt.not_null_film_summary_film_id.83d894194a)
+[0m23:41:48.361864 [debug] [Thread-1 (]: Began compiling node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:41:48.366486 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:41:48.374756 [debug] [Thread-1 (]: Began executing node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:41:48.377532 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:41:48.385490 [debug] [Thread-1 (]: Using postgres connection "test.elt.not_null_film_summary_film_id.83d894194a"
+[0m23:41:48.386175 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.not_null_film_summary_film_id.83d894194a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select film_id
+from "destination_db"."analytics"."film_summary"
+where film_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.386690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.396118 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m23:41:48.398695 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: ROLLBACK
+[0m23:41:48.399804 [debug] [Thread-1 (]: On test.elt.not_null_film_summary_film_id.83d894194a: Close
+[0m23:41:48.400851 [info ] [Thread-1 (]: 8 of 9 PASS not_null_film_summary_film_id ...................................... [[32mPASS[0m in 0.04s]
+[0m23:41:48.402134 [debug] [Thread-1 (]: Finished running node test.elt.not_null_film_summary_film_id.83d894194a
+[0m23:41:48.403290 [debug] [Thread-1 (]: Began running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:41:48.404216 [info ] [Thread-1 (]: 9 of 9 START test unique_film_summary_film_id .................................. [RUN]
+[0m23:41:48.405705 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.elt.not_null_film_summary_film_id.83d894194a, now test.elt.unique_film_summary_film_id.0bd05f0967)
+[0m23:41:48.406505 [debug] [Thread-1 (]: Began compiling node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:41:48.411255 [debug] [Thread-1 (]: Writing injected SQL for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:41:48.419247 [debug] [Thread-1 (]: Began executing node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:41:48.422095 [debug] [Thread-1 (]: Writing runtime sql for node "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:41:48.430046 [debug] [Thread-1 (]: Using postgres connection "test.elt.unique_film_summary_film_id.0bd05f0967"
+[0m23:41:48.430715 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: /* {"app": "dbt", "dbt_version": "1.11.17", "profile_name": "elt", "target_name": "dev", "node_id": "test.elt.unique_film_summary_film_id.0bd05f0967"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from "destination_db"."analytics"."film_summary"
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:41:48.431203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:48.441692 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:41:48.443762 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: ROLLBACK
+[0m23:41:48.444963 [debug] [Thread-1 (]: On test.elt.unique_film_summary_film_id.0bd05f0967: Close
+[0m23:41:48.446116 [info ] [Thread-1 (]: 9 of 9 PASS unique_film_summary_film_id ........................................ [[32mPASS[0m in 0.04s]
+[0m23:41:48.447387 [debug] [Thread-1 (]: Finished running node test.elt.unique_film_summary_film_id.0bd05f0967
+[0m23:41:48.450900 [debug] [MainThread]: On master: COMMIT
+[0m23:41:48.451751 [debug] [MainThread]: Using postgres connection "master"
+[0m23:41:48.452382 [debug] [MainThread]: On master: COMMIT
+[0m23:41:48.452946 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:41:48.461764 [debug] [MainThread]: SQL status: COMMIT in 0.009 seconds
+[0m23:41:48.462660 [debug] [MainThread]: On master: Close
+[0m23:41:48.463411 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:41:48.464047 [debug] [MainThread]: Connection 'test.elt.unique_film_summary_film_id.0bd05f0967' was properly closed.
+[0m23:41:48.464829 [info ] [MainThread]: 
+[0m23:41:48.465737 [info ] [MainThread]: Finished running 1 table model, 8 data tests in 0 hours 0 minutes and 0.77 seconds (0.77s).
+[0m23:41:48.468533 [debug] [MainThread]: Command end result
+[0m23:41:48.518558 [debug] [MainThread]: Wrote artifact WritableManifest to /dbt/target/manifest.json
+[0m23:41:48.526871 [debug] [MainThread]: Wrote artifact SemanticManifest to /dbt/target/semantic_manifest.json
+[0m23:41:48.538569 [debug] [MainThread]: Wrote artifact RunExecutionResult to /dbt/target/run_results.json
+[0m23:41:48.539203 [info ] [MainThread]: 
+[0m23:41:48.540088 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:41:48.541494 [info ] [MainThread]: 
+[0m23:41:48.543112 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m23:41:48.545644 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 1.8442713, "process_in_blocks": "0", "process_kernel_time": 0.637773, "process_mem_max_rss": "129272", "process_out_blocks": "0", "process_user_time": 2.770326}
+[0m23:41:48.546871 [debug] [MainThread]: Command `dbt build` succeeded at 23:41:48.546654 after 1.85 seconds
+[0m23:41:48.547854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb1382210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bae769700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bae769c80>]}
+[0m23:41:48.549016 [debug] [MainThread]: Flushing usage events
+[0m23:41:50.440013 [debug] [MainThread]: An error was encountered while trying to flush usage events

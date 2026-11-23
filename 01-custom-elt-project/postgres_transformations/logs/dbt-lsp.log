@@ -1,0 +1,114 @@
+==================== 2026-11-23T23:13:16.416831Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-11-23T23:13:16.417597Z | d3f3d83e-53f7-4da6-91fb-ed969851fefd ====================
+23:13:16.417701 [info ]: Starting dbt LSP server
+23:13:16.421109 [info ]: Connecting to LSP client on port 8000
+23:13:16.431637 [info ]: Successfully connected to LSP client
+23:13:16.431719 [info ]: Creating LSP service...
+23:13:16.437857 [info ]: Creating LSP server...
+23:13:16.437920 [info ]: Starting LSP server...
+23:13:16.655312 [info ]: Loading profiles.yml
+23:13:16.661123 [info ]: Loading profiles.yml
+23:13:16.666234 [info ]: Loading profiles.yml
+23:13:16.669810 [info ]: Loading profiles.yml
+23:13:16.674870 [info ]: Loading profiles.yml
+==================== 2026-11-23T23:13:20.444920Z | 093a7522-4a79-4c76-bfc5-525287f15d13 ====================
+23:13:20.447030 [info ]: Started loading project
+23:13:20.455701 [info ]: Loading profiles.yml
+23:13:20.465070 [info ]: Finished loading project [  0.02s]
+23:13:20.465371 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:13:20.467613 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [22ms]
+==================== 2026-11-23T23:13:20.755590Z | 85f98026-bd8a-4def-8fd2-ef058eb2e5d7 ====================
+23:13:20.755802 [info ]: Started loading project
+23:13:20.757341 [info ]: Loading profiles.yml
+23:13:20.758272 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:13:20.758332 [info ]: Finished loading project [  0.00s]
+23:13:20.758428 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [2ms]
+23:14:50.098047 [debug]: Ignoring unsupported LSP notification
+23:14:50.102076 [debug]: Ignoring unsupported LSP notification
+23:14:50.102393 [debug]: Ignoring unsupported LSP notification
+23:14:50.105358 [debug]: Ignoring unsupported LSP notification
+23:14:50.105763 [debug]: Ignoring unsupported LSP notification
+23:14:50.105823 [debug]: Ignoring unsupported LSP notification
+23:14:50.106038 [debug]: Ignoring unsupported LSP notification
+23:14:50.106079 [debug]: Ignoring unsupported LSP notification
+23:14:50.106710 [debug]: Ignoring unsupported LSP notification
+23:14:50.106918 [debug]: Ignoring unsupported LSP notification
+23:14:50.107554 [debug]: Ignoring unsupported LSP notification
+23:14:50.107588 [debug]: Ignoring unsupported LSP notification
+23:14:50.107706 [debug]: Ignoring unsupported LSP notification
+23:14:50.108303 [debug]: Ignoring unsupported LSP notification
+23:14:50.109383 [debug]: Ignoring unsupported LSP notification
+23:14:50.109466 [debug]: Ignoring unsupported LSP notification
+23:14:50.109475 [debug]: Ignoring unsupported LSP notification
+23:14:50.109481 [debug]: Ignoring unsupported LSP notification
+23:14:50.109491 [debug]: Ignoring unsupported LSP notification
+23:14:50.109497 [debug]: Ignoring unsupported LSP notification
+23:14:50.110641 [debug]: Ignoring unsupported LSP notification
+23:14:50.113205 [debug]: Ignoring unsupported LSP notification
+23:14:50.113821 [debug]: Ignoring unsupported LSP notification
+23:14:50.117175 [debug]: Ignoring unsupported LSP notification
+23:14:50.117549 [debug]: Ignoring unsupported LSP notification
+23:14:50.117578 [debug]: Ignoring unsupported LSP notification
+23:14:50.117583 [debug]: Ignoring unsupported LSP notification
+23:14:50.117593 [debug]: Ignoring unsupported LSP notification
+23:14:50.117601 [debug]: Ignoring unsupported LSP notification
+23:14:50.117613 [debug]: Ignoring unsupported LSP notification
+23:14:50.117619 [debug]: Ignoring unsupported LSP notification
+23:14:50.118226 [debug]: Ignoring unsupported LSP notification
+23:14:50.118546 [debug]: Ignoring unsupported LSP notification
+23:14:50.118979 [debug]: Ignoring unsupported LSP notification
+23:14:50.119716 [debug]: Ignoring unsupported LSP notification
+23:14:50.119766 [debug]: Ignoring unsupported LSP notification
+23:14:50.119776 [debug]: Ignoring unsupported LSP notification
+23:14:50.119784 [debug]: Ignoring unsupported LSP notification
+23:16:00.641699 [info ]: Loading profiles.yml
+23:16:46.771122 [info ]: Loading profiles.yml
+23:16:52.977386 [info ]: Loading profiles.yml
+23:16:53.285089 [info ]: Loading profiles.yml
+23:16:53.757340 [info ]: Loading profiles.yml
+23:16:54.079527 [info ]: Loading profiles.yml
+23:17:35.467150 [info ]: Loading profiles.yml
+23:17:35.793904 [info ]: Loading profiles.yml
+23:18:43.757234 [info ]: Loading profiles.yml
+==================== 2026-11-23T23:19:41.513275Z | 8f6d5f87-b63a-498c-bf12-884693bf08a6 ====================
+23:19:41.513443 [info ]: Started loading project
+23:19:41.514843 [info ]: Loading profiles.yml
+23:19:41.515322 [info ]: Finished loading project [  0.00s]
+23:19:41.516098 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:19:41.516289 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [3ms]
+==================== 2026-11-23T23:19:41.849031Z | 09a12c1d-a921-448b-988c-ba137ab2b74e ====================
+23:19:41.849167 [info ]: Started loading project
+23:19:41.849807 [info ]: Loading profiles.yml
+23:19:41.850218 [info ]: Finished loading project [  0.00s]
+23:19:41.850410 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:19:41.850560 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:19:54.731666Z | 6174e2bc-7bfb-4a6c-a181-7799c78f10aa ====================
+23:19:54.731839 [info ]: Started loading project
+23:19:54.732467 [info ]: Loading profiles.yml
+23:19:54.732886 [info ]: Finished loading project [  0.00s]
+23:19:54.733095 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:19:54.733264 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:19:55.077539Z | 875e2418-e1e4-4162-b8de-1d4db37bdf06 ====================
+23:19:55.078264 [info ]: Started loading project
+23:19:55.081317 [info ]: Loading profiles.yml
+23:19:55.083680 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:19:55.082864 [info ]: Finished loading project [  0.00s]
+23:19:55.096424 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [18ms]

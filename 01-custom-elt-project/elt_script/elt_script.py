@@ -79,9 +79,11 @@ load_command = [
     '-h', destination_config['host'],
     '-U', destination_config['user'],
     '-d', destination_config['dbname'],
+    '-v', 'ON_ERROR_STOP=1',
     '-a', '-f', DUMP_FILE
 ]
 subprocess.run(load_command, env={'PGPASSWORD': destination_config['password']}, check=True)
 logger.info("Loaded data into destination database")
 
 logger.info("ELT script finished successfully.")
+

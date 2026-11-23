@@ -50,6 +50,20 @@ services:
       destination_postgres:
         condition: service_healthy
 
+  dbt:
+    build:
+      context: ./postgres_transformations
+    command: ["build"]
+    networks:
+      - elt_network
+    env_file:
+      - .env
+    volumes:
+      - ./postgres_transformations:/dbt
+    depends_on:
+      elt_script:
+        condition: service_completed_successfully
+
 networks:
   elt_network:
     driver: bridge
