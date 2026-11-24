@@ -5,3 +5,10 @@ models:
     columns:
       - name: film_id
         data_tests: [unique, not_null]
+
+  - name: users_summary
+    columns:
+      - name: id
+        data_tests: [unique, not_null]
+      - name: age
+        data_tests: [not_null]
