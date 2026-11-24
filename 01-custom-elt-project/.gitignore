@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 data_dump.sql
+postgres_transformations/target/
+postgres_transformations/logs/
+postgres_transformations/dbt_packages/
+airflow/logs/

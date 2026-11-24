@@ -1,5 +1,6 @@
 x-airflow-common: &airflow-common
-  image: apache/airflow:3.3.2
+  build: ./airflow
+  image: elt-airflow:3.3.2
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__CORE__AUTH_MANAGER: airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
@@ -8,14 +9,29 @@ x-airflow-common: &airflow-common
     AIRFLOW__API_AUTH__JWT_SECRET: ${AIRFLOW__API_AUTH__JWT_SECRET:?Set AIRFLOW__API_AUTH__JWT_SECRET in .env}
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: http://airflow-apiserver:8080/execution/
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    # Read by elt_script.py and dbt when they run as Airflow tasks
+    SOURCE_DB_NAME: ${SOURCE_DB_NAME}
+    SOURCE_DB_USER: ${SOURCE_DB_USER}
+    SOURCE_DB_PASSWORD: ${SOURCE_DB_PASSWORD}
+    SOURCE_DB_HOST: ${SOURCE_DB_HOST}
+    DEST_DB_NAME: ${DEST_DB_NAME}
+    DEST_DB_USER: ${DEST_DB_USER}
+    DEST_DB_PASSWORD: ${DEST_DB_PASSWORD}
+    DEST_DB_HOST: ${DEST_DB_HOST}
   volumes:
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
+    - ./elt_script:/opt/airflow/elt_script
+    - ./postgres_transformations:/opt/airflow/dbt
   user: "${AIRFLOW_UID:-50000}:0"
   networks:
     - elt_network
   depends_on: &airflow-common-depends-on
     airflow_postgres:
+      condition: service_healthy
+    source_postgres:
+      condition: service_healthy
+    destination_postgres:
       condition: service_healthy
 
 services:
@@ -55,7 +71,9 @@ services:
       timeout: 5s
       retries: 10
 
+  # Manual-only now: Airflow runs these steps. Use e.g. `docker compose run --rm elt_script`
   elt_script:
+    profiles: ["manual"]
     build:
       context: ./elt_script
       dockerfile: Dockerfile
@@ -71,6 +89,7 @@ services:
         condition: service_healthy
 
   dbt:
+    profiles: ["manual"]
     build:
       context: ./postgres_transformations
     command: ["build"]
