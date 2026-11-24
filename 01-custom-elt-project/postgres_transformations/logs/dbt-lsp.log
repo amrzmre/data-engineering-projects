@@ -155,3 +155,141 @@ Finished 'compile' with 1 error [1ms]
 23:39:17.830841 [info ]: Loading profiles.yml
 23:40:41.175987 [info ]: Loading profiles.yml
 23:41:48.941728 [info ]: Loading profiles.yml
+==================== 2026-11-23T23:50:01.396516Z | 0eb14339-b743-4658-a79d-7f195710934e ====================
+23:50:01.396659 [info ]: Started loading project
+23:50:01.397387 [info ]: Loading profiles.yml
+23:50:01.397823 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:50:01.397910 [info ]: Finished loading project [  0.00s]
+23:50:01.397945 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:50:01.716809Z | 0229453d-d7f5-478e-a6e8-823e64e29771 ====================
+23:50:01.716946 [info ]: Started loading project
+23:50:01.717663 [info ]: Loading profiles.yml
+23:50:01.718057 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:50:01.718121 [info ]: Finished loading project [  0.00s]
+23:50:01.718151 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:50:25.830439Z | 9cb1210c-dfe0-468a-9f8d-c35e37c2caac ====================
+23:50:25.830558 [info ]: Started loading project
+23:50:25.831216 [info ]: Loading profiles.yml
+23:50:25.831565 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:50:25.831646 [info ]: Finished loading project [  0.00s]
+23:50:25.831704 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:50:26.158306Z | f9c92df3-f785-4379-9ed4-69ddb39bd0a4 ====================
+23:50:26.158490 [info ]: Started loading project
+23:50:26.159227 [info ]: Loading profiles.yml
+23:50:26.159566 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:50:26.159627 [info ]: Finished loading project [  0.00s]
+23:50:26.159678 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:52:42.986399Z | 00b5e805-52e6-4409-aa59-0b5a0c5d54da ====================
+23:52:42.986517 [info ]: Started loading project
+23:52:42.987174 [info ]: Loading profiles.yml
+23:52:42.987535 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:52:42.987577 [info ]: Finished loading project [  0.00s]
+23:52:42.987600 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:52:43.445540Z | 3678138a-c2ef-4817-a696-791965a3f3a8 ====================
+23:52:43.445634 [info ]: Started loading project
+23:52:43.446239 [info ]: Loading profiles.yml
+23:52:43.446549 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:52:43.446599 [info ]: Finished loading project [  0.00s]
+23:52:43.446645 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:53:17.668655Z | 17228843-e0e7-4b1e-a569-40fcab9a4726 ====================
+23:53:17.668842 [info ]: Started loading project
+23:53:17.669538 [info ]: Loading profiles.yml
+23:53:17.669959 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:53:17.670023 [info ]: Finished loading project [  0.00s]
+23:53:17.670117 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:53:44.767855Z | 6d2bb595-b193-438d-af8f-9be819f64ec1 ====================
+23:53:44.768029 [info ]: Started loading project
+23:53:44.768840 [info ]: Loading profiles.yml
+23:53:44.769365 [info ]: Finished loading project [  0.00s]
+23:53:44.771069 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:53:44.771250 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [3ms]
+==================== 2026-11-23T23:53:45.107929Z | ce83793b-f1de-48c1-aaf0-d66af3b3c23a ====================
+23:53:45.108095 [info ]: Started loading project
+23:53:45.108729 [info ]: Loading profiles.yml
+23:53:45.109208 [info ]: Finished loading project [  0.00s]
+23:53:45.109405 [error]: [IoError (dbt1001)]: Profile '01-custom-elt-project' not found in profiles.yml
+  --> dbt_project.yml:3:10
+23:53:45.109541 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:54:37.956172Z | 7c7668d7-26a3-47e4-a0a2-d9ea4ff8cb69 ====================
+23:54:37.956288 [info ]: Started loading project
+23:54:37.956920 [info ]: Loading profiles.yml
+23:54:37.957397 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:54:37.957420 [info ]: Finished loading project [  0.00s]
+23:54:37.957466 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:54:38.291558Z | ea4776f2-d236-4a6f-b0f7-f9090b56891a ====================
+23:54:38.291643 [info ]: Started loading project
+23:54:38.292167 [info ]: Loading profiles.yml
+23:54:38.292632 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:54:38.292665 [info ]: Finished loading project [  0.00s]
+23:54:38.292689 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+23:54:39.490129 [info ]: Loading profiles.yml
+==================== 2026-11-23T23:54:51.061695Z | ce770985-3ad2-40c0-9b94-548e4520d7ed ====================
+23:54:51.061774 [info ]: Started loading project
+23:54:51.062515 [info ]: Loading profiles.yml
+23:54:51.062871 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:54:51.062933 [info ]: Finished loading project [  0.00s]
+23:54:51.062974 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:54:51.377743Z | 13b33b35-2878-4ddb-9ec5-ea947d25e0bf ====================
+23:54:51.377909 [info ]: Started loading project
+23:54:51.378504 [info ]: Loading profiles.yml
+23:54:51.378832 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:54:51.378890 [info ]: Finished loading project [  0.00s]
+23:54:51.378922 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:55:27.386046Z | a33550d8-ce6f-4026-824d-65d82104ea74 ====================
+23:55:27.386131 [info ]: Started loading project
+23:55:27.386676 [info ]: Loading profiles.yml
+23:55:27.387010 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:55:27.387078 [info ]: Finished loading project [  0.00s]
+23:55:27.387117 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+==================== 2026-11-23T23:55:27.710313Z | ccf45329-3624-412e-a022-b5e9c0c1ca48 ====================
+23:55:27.710405 [info ]: Started loading project
+23:55:27.710970 [info ]: Loading profiles.yml
+23:55:27.711297 [error]: [InvalidConfig (dbt1005)]: Jinja render error: invalid operation: 'env_var': environment variable 'DEST_DB_HOST' not found
+(in :1:1)
+23:55:27.711348 [info ]: Finished loading project [  0.00s]
+23:55:27.711381 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [1ms]
+23:55:33.052862 [info ]: Loading profiles.yml
+23:57:07.242507 [info ]: Loading profiles.yml
