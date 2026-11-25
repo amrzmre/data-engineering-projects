@@ -66,7 +66,8 @@ What changed compared with the code I started from:
 
 ## Architecture
 
-<!-- TODO: replace this text diagram with the draw.io architecture diagram -->
+![Architecture of the ELT pipeline](figure/01-architecture-diagram.png)
+*Source and destination Postgres databases, the Airflow DAG with its two tasks, and the dbt output schema.*
 ```text
 Source DB (Postgres)  →  ELT script (Python)  →  Destination DB (Postgres)  →  dbt models
         ▲                  pg_dump → psql          schema: public (raw copy)    schema: analytics
@@ -349,7 +350,7 @@ Issues hit while building this, plus a couple of known gotchas.
 - [x] Dockerised, re-runnable ELT script
 - [x] dbt models and tests
 - [x] Orchestration with Apache Airflow
-- [ ] Add the architecture diagram to `figure/`
+- [x] Add the architecture diagram to `figure/`
 
 Ideas I may explore next:
 

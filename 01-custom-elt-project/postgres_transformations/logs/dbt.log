@@ -3261,3 +3261,7 @@ having count(*) > 1
 [0m22:42:09.459532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c9c0abe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c989709f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c989717b0>]}
 [0m22:42:09.462448 [debug] [MainThread]: Flushing usage events
 [0m22:42:12.202950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-11-25T12:23:36.034053Z | 01a212a9-5133-73f0-98a0-29410d784c6d ====================
+12:23:53.989123 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [18.0s]
